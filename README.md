@@ -1,5 +1,11 @@
 # George's Advent of Code 2022
+
 *Let's see how this goes!*
+
+(To follow rules, daily solutions will be uploaded at a minimum of 24 hours after the challenge opens.)
+
+
+## Table of Challenges and Solutions
 
 | Challenge # | Challenge Summary | Solution Summary |
 | --- | --- | --- |
