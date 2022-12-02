@@ -9,7 +9,7 @@
 
 | Challenge # | Challenge Summary | Solution Summary |
 | --- | --- | --- |
-1 | Pending | Pending
+1 | You given a list of values. Each group of values represents 1 Elf's calorie inventory. A single value is a single item's calorie value. An empty space is what separates each elfs' group of items from each other. **Find which elf is carrying the most calories.** | Pending
 2 | Pending | Pending
 3 | Pending | Pending
 4 | Pending | Pending
