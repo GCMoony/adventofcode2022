@@ -58,4 +58,51 @@ for(let anItem of formattedInputText)
     // There's no more "" to meet
 listOfElfInventories.push(newElfInventory);
 
-console.log(listOfElfInventories)
+// Sum the value of every elf's inventory
+let listSummedElfInventories = listOfElfInventories.map(anElfBag =>{
+    let elfTotalSum = 0;
+    for(foodValue of anElfBag)
+    {
+        elfTotalSum += foodValue;
+    }
+    return elfTotalSum;
+})
+
+//console.log(listSummedElfInventories);
+
+// Finally, we can find the elf with the most 
+    // Calories in their inventory
+let elfWithMostCalories = 0;
+for(let anElfBag of listSummedElfInventories)
+{
+    if(anElfBag > elfWithMostCalories)
+        elfWithMostCalories = anElfBag;
+}
+
+// Print the Elf with the most calories
+    // total calorie count
+//console.log(elfWithMostCalories);
+
+
+// ====== Part 2 begins here ======
+// Now we need to find the top 3 elves with the
+    // Highest calorie sum
+
+// For simplicity, I'll perform a bubble sort
+// I'll also rename the array of sums
+let sumArray = listSummedElfInventories;
+for(let i = 0; i < sumArray.length; i++)
+{
+    for(let j = 0; j < sumArray.length; j++)
+    {
+        if(sumArray[i] > sumArray[j])
+        {
+            temp = sumArray[i];
+            sumArray[i] = sumArray[j];
+            sumArray[j] = temp;
+        }
+    }
+}
+
+// Return the sum of the top three elves' inventories
+console.log(sumArray[0] + sumArray[1] + sumArray[2]);
