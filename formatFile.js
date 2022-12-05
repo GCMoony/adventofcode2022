@@ -12,8 +12,20 @@ function getFileArray(fileName){
     }).split("\n");
 }
 
+// Formatting inputs if they have carriage return
+function getFormatLines(anImportedArray)
+{
+    let formattedArray = [];
+    for(line of anImportedArray)
+    {
+        formattedArray.push(line.replace("\r", ""));
+    }
+    return formattedArray;
+}
+
 // To export for Node
-exports.getFileArray = getFileArray
+exports.getFileArray = getFileArray;
+exports.getFormatLines = getFormatLines;
 
 //let text = getFileArray("./Challenge_02/input.txt");
 //console.log(text.split("\n"));
