@@ -13,3 +13,5 @@
 2 | [View Challenge](./Challenge_02) | [View Solution](./Challenge_02/challenge_02.js)
 3 | [View Challenge](./Challenge_03) | [View Solution](./Challenge_03/challenge_03.js)
 4 | [View Challenge](./Challenge_04) | [View Solution](./Challenge_04/challenge_04.js)
+5 | [View Challenge](./Challenge_05) | [View Solution](./Challenge_05/challenge_05.js)
+That one right there 👆, this is where I doubt myself. I guess I'm coming back to this challenge eventually.
